@@ -1,0 +1,115 @@
+body {
+    background: url(/src/assets/v-background.png) repeat;
+    color: #000;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    height: 100%;
+}
+
+img {
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+select {
+    border: 2px solid #bbb;
+    border-radius: 10px;
+    background: #fff;
+    display: block;
+    width: 100%;
+    transition: border .8s ease;
+    cursor: pointer;
+}
+
+select:hover {
+    border: 2px solid #fab;
+    transition: border .8s ease;
+}
+
+select:focus {
+    outline: none;
+}
+
+button {
+    width: 50%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+    background: rgb(225, 10, 10);
+    font-size: 16px;
+    color: #fff;
+    transition: background .5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(167, 10, 10);
+    transition: background .5s ease;
+}
+
+button:disabled {
+    background: rgb(231, 145, 145);
+    cursor: not-allowed;
+}
+
+.main-container {
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    background: #fff;
+}
+
+.search-date {
+    margin: 0 auto;
+    width: 400px;
+    padding-bottom: 35%;
+    margin-top: 40px;
+    position: relative;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-control {
+    flex: 0 0 33%;
+}
+
+.hide {
+    display: none;
+}
+
+.flight, .flight-headings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flight div, .heading div {
+    flex: 0 0 auto;
+    padding-bottom: 5px;
+}
+
+.heading {
+    font-weight: bold;
+    background: rgb(66, 66, 66);
+    color: #fff;
+}

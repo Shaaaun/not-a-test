@@ -1,0 +1,26 @@
+{
+  "name": "airport-app-data",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {
+    "less": "^3.8.1"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "npm install http-server && http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virginholidays/airport-app-data.git"
+  },
+  "author": "Desmond Tutu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virginholidays/airport-app-data/issues"
+  },
+  "homepage": "https://github.com/virginholidays/airport-app-data#readme"
+}
