@@ -4,14 +4,20 @@
   "description": "Test",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.1.3"
+    "app": "^0.1.0",
+    "bootstrap": "^4.1.3",
+    "farts": "0.0.4",
+    "parcel-plugin-url-loader": "^1.2.5"
   },
   "devDependencies": {
     "less": "^3.8.1"
   },
   "scripts": {
     "test": "test",
-    "start": "npm install http-server && http-server"
+    "start": "npm install http-server && http-server",
+    "butts": "parcel src/app/app.html && npm run make-directory && npm run copy-data --global DateStuff",
+    "make-directory": "mkdir ./dist/data",
+    "copy-data": "cp src/data/flights.csv ./dist/data"
   },
   "repository": {
     "type": "git",

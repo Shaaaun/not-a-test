@@ -1,0 +1,6 @@
+{
+    "url-loader": {
+    "exts": ["svg"],
+    "limit": 66666
+  }
+}
