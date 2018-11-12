@@ -14,7 +14,7 @@ const DateStuff = {
         });
 
         for(var year = DateStuff.config.start; year <= DateStuff.config.end; year++) {
-            options += "<option value="+year+">"+ year +"</option>";
+            options += `<option value="${year}">${year}</option>`;
         }
         document.getElementById("year").innerHTML += options;
     },
