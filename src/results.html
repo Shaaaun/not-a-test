@@ -1,0 +1,11 @@
+<div class="search-date">
+    <h4>Here's what we've found!</h4>
+    <div id="flight-data">
+        <div class="flight-headings">
+            <div class="heading" ng-repeat="heading in $ctrl.headings">{{heading}}</div>
+        </div>
+        <div class="flight" ng-repeat="flight in $ctrl.displayData">
+            <div ng-repeat="data in flight">{{data}}</div>
+        </div>
+    </div>
+</div>

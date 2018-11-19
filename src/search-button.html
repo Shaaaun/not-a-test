@@ -1,0 +1,2 @@
+<button class="flight-search" ng-if="!$ctrl.hasSearched" id="search" value="Search" ng-disabled="$ctrl.isInvalid" ng-click="$ctrl.getResults(); $ctrl.onChange('hasSearched', true); $ctrl.onChange('displayData', $ctrl.displayData)">{{$ctrl.buttonText}}</button>
+<button class="flight-search" ng-if="$ctrl.hasSearched" id="search" value="Search" ng-click="$ctrl.reset(); $ctrl.onChange('hasSearched', false); $ctrl.onChange('displayData', [])">{{$ctrl.buttonText}}</button>

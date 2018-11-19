@@ -1,0 +1,28 @@
+<div class="search-date">
+    <h3>When do you want to fly?</h3>
+    <div class="date">
+    <div class="date-control">
+        <label for="day">Day</label>
+        <select class="fnarf" id="day" name="day-search" ng-model="$ctrl.selectedDay" ng-change="$ctrl.onChange('selectedDay', $ctrl.selectedDay)">
+            <option value="dd">Day</option>
+            <option ng-repeat="day in $ctrl.days" value="{{day}}">{{day}}</option>
+        </select>
+    </div>
+    
+    <div class="date-control">
+        <label for="month">Month</label>
+        <select class="fnarf" id="month" name="month-search" ng-model="$ctrl.selectedMonth" ng-change="$ctrl.onChange('selectedMonth', $ctrl.selectedMonth)">
+            <option value="mm">Month</option>
+            <option ng-repeat="month in $ctrl.months track by $index" value="{{month | date: 'MMM'}}">{{month | date: "MMMM"}}</option>
+        </select>
+    </div>
+
+    <div class="date-control">
+        <label for="year">Year</label>
+        <select class="fnarf" id="year" name="year-search" ng-model="$ctrl.selectedYear" ng-change="$ctrl.onChange('selectedYear', $ctrl.selectedYear)">
+            <option value="yy">Year</option>
+            <option ng-repeat="year in $ctrl.years" value="{{year.id}}">{{year.name}}</option>
+        </select>
+    </div>
+    </div>
+</div>

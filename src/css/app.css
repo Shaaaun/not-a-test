@@ -49,7 +49,7 @@ select:focus {
 
 button {
     width: 50%;
-    margin-top: 30px;
+    margin: 30px;
     padding: 10px 20px;
     border-radius: 5px;
     border: 0px;
@@ -70,9 +70,13 @@ button:disabled {
     cursor: not-allowed;
 }
 
+button:focus {
+    outline: none;
+}
+
 .main-container {
     margin: 0 auto;
-    height: 100%;
+    height: 100vh;
     width: 70%;
     background: #fff;
 }
@@ -80,7 +84,6 @@ button:disabled {
 .search-date {
     margin: 0 auto;
     width: 400px;
-    padding-bottom: 35%;
     margin-top: 40px;
     position: relative;
 }

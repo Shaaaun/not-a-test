@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="airportDataApp">
+    <head>
+        <title>Not a Test</title>
+        <link rel="stylesheet" type="text/css" href="./src/css/app.css">
+        <script src="./node_modules/angular/angular.js"></script>
+        <script src="./app.module.js"></script>
+        <script src="./src/date-select.module.js"></script>
+        <script src="./src/date-select.component.js"></script>
+        <script src="./src/results.module.js"></script>
+        <script src="./src/retrieval.service.js"></script>
+        <script src="./src/results.component.js"></script>
+        <script src="./src/search-button.module.js"></script>
+        <script src="./src/search-button.component.js"></script>
+    </head>
+    <body>
+        <div class="main-container" ng-controller="app">
+            <img src="./src/assets/vhols-logo.png" alt="Virgin Holidays logo"/>
+            <h1>{{title}}</h1>
+            <h2>{{subTitle}}</h2>
+            <date-select ng-if="!hasSearched" has-searched="hasSearched" selected-day="selectedDay" selected-month="selectedMonth" selected-year="selectedYear" input-change="onChanges(type, value)"></date-select>
+            <results ng-if="hasSearched" has-searched="hasSearched" display-data="displayData"></results>
+            <search-button display-data="displayData" formatted-day="formattedDay" is-invalid="isInvalid" has-searched="hasSearched" input-change="onChanges(type, value)"></search-button>
+        </div>
+    </body>
+</html>
